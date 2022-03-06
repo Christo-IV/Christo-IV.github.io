@@ -117,7 +117,7 @@ header::before {
   text-shadow: 0 6px var(--secondary-color), 0 12px var(--tertiary-color);
 }
 
-.current {
+.current > a {
   text-shadow: 0 6px var(--secondary-color), 0 12px var(--tertiary-color);
 }
 
