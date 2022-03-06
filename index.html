@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>16 - Figma</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-content flex">
+          <h2 class="nav-home"><a href="#">C.V.</a></h2>
+          <ul class="nav-links flex">
+            <li class="nav-link"><a href="#about">About</a></li>
+            <li class="nav-link"><a href="#work">Work</a></li>
+            <li class="nav-link"><a href="#education">Education</a></li>
+            <li class="nav-link"><a href="#internship">Internship</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <!-- Landing -->
+
+      <section class="landing grid" id="landing">
+        <div class="left">
+          <img
+            src="imgs/Untitled-3.png"
+            alt="A picture of me, Christo!"
+            class="my-img"
+          />
+        </div>
+        <div class="middle">
+          <div class="divider v-dotted-line"></div>
+        </div>
+        <div class="right">
+          <p class="greeting">
+            Hi, I'm<br /><span class="my-name">Christo Vahtramäe</span>
+          </p>
+          <p class="intro-desc">
+            A 19 y.o. Estonian software developer currently studying in Tartu
+            Vocational College. I aspire to one day become a game developer.
+          </p>
+        </div>
+      </section>
+
+      <!-- About me -->
+
+      <section class="about grid" id="about">
+        <div class="left flex content-column">
+          <div class="header"><h1>About me</h1></div>
+          <div class="content">
+            <p>
+              I'm a 19 year old who enjoys designing and solving puzzles.
+              Currently I am studying at Tartu Vocational College to become a
+              software developer.
+            </p>
+            <p>
+              One day I hope to officially step into the world of game
+              development because I absolutely love the level of immersion video
+              games are able to offer.
+            </p>
+            <p>
+              My hobbies include playing video games, listening to music,
+              drawing, perusing the internet and playing around with code.
+            </p>
+          </div>
+          <div class="footer">
+            <p class="contact"><b>Contact:</b> christo.vahtramae@voco.ee</p>
+          </div>
+        </div>
+        <div class="middle">
+          <div class="divider v-dotted-line"></div>
+        </div>
+        <div class="right flex">
+          <div class="c-sharp programming-language flex">
+            <p class="language">C#</p>
+            <span class="proficiency"></span>
+          </div>
+          <div class="php programming-language flex">
+            <p class="language">PHP</p>
+            <span class="proficiency"></span>
+          </div>
+          <div class="python programming-language flex">
+            <p class="language">Python</p>
+            <span class="proficiency"></span>
+          </div>
+          <div class="javascript programming-language flex">
+            <p class="language">JavaScript</p>
+            <span class="proficiency"></span>
+          </div>
+          <div class="typescript programming-language flex">
+            <p class="language">Typescript</p>
+            <span class="proficiency"></span>
+          </div>
+          <div class="html-css programming-language flex">
+            <p class="language">HTML & CSS</p>
+            <span class="proficiency"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Done work / Projects -->
+
+      <section class="work grid" id="work">
+        <div class="left flex content-column">
+          <div class="header"><h1>My work</h1></div>
+          <div class="content flex">
+            <div class="project-heading">
+              <h2>Calorie tracking app</h2>
+              <span class="sub">Figma</span>
+            </div>
+            <div class="description">
+              <p>
+                Made during the Garage48 hackathon in 2021. I was apart of a 7
+                person team where I was the lead UI / UX designer.
+              </p>
+              <p>
+                My time during the hackathon was entirely focused on making
+                Figma prototypes for the rest of the team.
+              </p>
+            </div>
+            <div class="project-links flex">
+              <a href="#" class="project-link flex">
+                <img src="imgs/GitHub-Mark-32px.png" alt="GitHub link" />
+              </a>
+              <a href="#" class="project-link flex">
+                <img src="imgs/1-Color-Icon-Black.svg" alt="Figma link" />
+              </a>
+            </div>
+          </div>
+          <div class="footer"></div>
+        </div>
+        <div class="middle">
+          <div class="divider v-dotted-line"></div>
+        </div>
+        <div class="right">
+          <img src="imgs/calorieApp.JPG" alt="" class="work-snapshot" />
+        </div>
+      </section>
+
+      <!-- Education  -->
+
+      <section class="education grid" id="education">
+        <div class="left flex content-column">
+          <div class="header">
+            <h1>Completed modules</h1>
+          </div>
+          <div class="content flex">
+            <ul class="modules flex">
+              <li class="module">
+                <h3>Fundamentals of IT</h3>
+                <span class="sub"
+                  >OSs, general software usage, terminology, computer
+                  networks</span
+                >
+              </li>
+              <li class="module">
+                <h3>Fundamentals of Programming</h3>
+                <span class="sub"
+                  >Datatypes / structures, logic gates, IDEs, basics of OOP,
+                  code documentation, terminology</span
+                >
+              </li>
+              <li class="module">
+                <h3>Programming</h3>
+                <span class="sub">Python, OOP, MVC</span>
+              </li>
+              <li class="module">
+                <h3>Web application development</h3>
+                <span class="sub"
+                  >HTML, CSS, JS, TS, Node.js, React, Svelte</span
+                >
+              </li>
+              <li class="module">
+                <h3>Fundamentals of Distributed Applications</h3>
+                <span class="sub">APIs, API documentation, API Security</span>
+              </li>
+              <li class="module">
+                <h3>Software Development Methodologies</h3>
+                <span class="sub">Agile, Waterfall</span>
+              </li>
+              <li class="module">
+                <h3>English</h3>
+                <span class="sub">C2</span>
+              </li>
+            </ul>
+          </div>
+          <div class="footer"></div>
+        </div>
+        <div class="middle">
+          <div class="timeline divider v-dotted-line"></div>
+        </div>
+        <div class="right">
+          <ol class="events flex">
+            <li class="event">
+              <span class="year passed">2019</span>
+              <h3>Tartu Vocational College</h3>
+            </li>
+            <li class="event">
+              <span class="year passed">2020</span>
+              <h3>Tartu University Course</h3>
+            </li>
+            <li class="event">
+              <span class="year passed">2021</span>
+              <h3>Garage46 Hackathon</h3>
+            </li>
+            <li class="event">
+              <span class="year">2022</span>
+              <h3>Maker of the Year Competition</h3>
+            </li>
+            <li class="event">
+              <span class="year">2023</span>
+              <h3>Graduation</h3>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Internship -->
+
+      <section class="internship grid" id="internship">
+        <div class="left"></div>
+        <div class="middle flex content-column">
+          <div class="header"><h1>Internship goals</h1></div>
+          <div class="content">
+            <p>
+              As of currently, I still lack proper experience in the IT field. I
+              would like to change that, starting with an internship. I’d like
+              to see what it’s really like on the ground floor of a software
+              company. And how everything is connected, both in terms of code
+              and of people.
+            </p>
+            <p>
+              Once I have finished my course in VOCO, I’d like to continue
+              studying programming in Tartu University.
+            </p>
+          </div>
+          <p class="contact"><b>Contact:</b> christo.vahtramae@voco.ee</p>
+        </div>
+        <div class="right"></div>
+      </section>
+    </div>
+    <!-- <script src="main.js"></script> -->
+  </body>
+</html>
