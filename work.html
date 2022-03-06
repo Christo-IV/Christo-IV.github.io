@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>16 - Figma</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-content flex">
+          <h2 class="nav-home"><a href="index.html">C.V.</a></h2>
+          <ul class="nav-links flex">
+            <li class="nav-link"><a href="about.html">About</a></li>
+            <li class="nav-link"><a href="work.html">Work</a></li>
+            <li class="nav-link"><a href="education.html">Education</a></li>
+            <li class="nav-link"><a href="internship.html">Internship</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <!-- Done work / Projects -->
+
+      <!-- Calorie Tracking app -->
+
+      <section class="work grid" id="work">
+        <div class="left flex content-column">
+          <div class="header"><h1>My work</h1></div>
+          <div class="content flex">
+            <div class="project-heading">
+              <h2>Calorie tracking app</h2>
+              <span class="sub">Figma</span>
+            </div>
+            <div class="description">
+              <p>
+                Made during the Garage48 hackathon in 2021. I was apart of a 7
+                person team where I was the lead UI / UX designer.
+              </p>
+              <p>
+                My time during the hackathon was entirely focused on making
+                Figma prototypes for the rest of the team.
+              </p>
+            </div>
+            <div class="project-links flex">
+              <a href="#" class="project-link flex">
+                <img src="imgs/icons/GitHub-Mark-32px.png" alt="GitHub link" />
+              </a>
+              <a
+                href="https://www.figma.com/proto/KhEQ8M1x9wv5IgtZ16Vavr/%5BPH%5D-Tracker?node-id=81%3A359&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=81%3A359"
+                class="project-link flex"
+                target="_blank"
+              >
+                <img src="imgs/icons/1-Color-Icon-Black.svg" alt="Figma link" />
+              </a>
+            </div>
+          </div>
+          <div class="footer"></div>
+        </div>
+        <div class="middle">
+          <div class="divider v-dotted-line"></div>
+        </div>
+        <div class="right">
+          <img
+            src="imgs/snapshots/calorieApp.JPG"
+            alt="Snapshot of calorie tracking app"
+            class="work-snapshot"
+          />
+        </div>
+      </section>
+
+      <!-- Weather Forecast app -->
+
+      <section class="work grid" id="work">
+        <div class="left flex content-column">
+          <div class="header"><h1>My work</h1></div>
+          <div class="content flex">
+            <div class="project-heading">
+              <h2>Weather forecast app</h2>
+              <span class="sub">Figma</span>
+            </div>
+            <div class="description">
+              <p>
+                I was tasked to create an app where the user can use an
+                interactive map to get a location’s weather forecast.
+              </p>
+              <p>
+                Map was implemented via the React-Leaflet Node package. The
+                weather data itself was fetched from the Open Weather API. I
+                also ended up sprinkling a little bit of custom CSS ontop of
+                everything to make it look nicer.
+              </p>
+              <p>
+                An additional requirement was that it used React Typescript. I
+                had never used Typescript prior to this task, but I ended up
+                really enjoying TS. Main reason being that in the end it made
+                understanding the code a lot easier.
+              </p>
+            </div>
+            <div class="project-links flex">
+              <a
+                href="https://github.com/Christo-IV/react-weather"
+                class="project-link flex"
+                target="_blank"
+              >
+                <img src="imgs/icons/GitHub-Mark-32px.png" alt="GitHub link" />
+              </a>
+              <a href="#" class="project-link flex">
+                <img src="imgs/icons/1-Color-Icon-Black.svg" alt="Figma link" />
+              </a>
+            </div>
+          </div>
+          <div class="footer"></div>
+        </div>
+        <div class="middle">
+          <div class="divider v-dotted-line"></div>
+        </div>
+        <div class="right">
+          <img
+            src="imgs/snapshots/weatherApp.JPG"
+            alt="Snapshot of weather forecast app"
+            class="work-snapshot"
+          />
+        </div>
+      </section>
+    </div>
+    <!-- <script src="main.js"></script> -->
+  </body>
+</html>
