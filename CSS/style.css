@@ -27,6 +27,7 @@ body {
 
 ::-webkit-scrollbar {
   width: 10px;
+  height: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -127,7 +128,7 @@ header::before {
 .container {
   margin: 0 auto;
   width: min(1250px, 100vw);
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 .container > section {
@@ -163,7 +164,8 @@ header::before {
 .content-column {
   flex-direction: column;
   justify-content: space-between;
-  height: 45%;
+  gap: 4rem;
+  min-height: 30%;
 }
 
 .header {
@@ -448,7 +450,7 @@ p {
 
 .timeline {
   margin-top: 5rem;
-  height: 100vh;
+  height: 90vh;
   transform: translateX(4400%) rotate(var(--timeline-angle));
 }
 
