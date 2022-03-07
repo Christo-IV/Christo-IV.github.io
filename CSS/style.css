@@ -6,9 +6,9 @@
   font-size: 18px;
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 *,
 *::before,
@@ -57,7 +57,7 @@ header {
     rgba(63, 63, 68, 0.03) 0%,
     rgba(196, 196, 196, 0) 100%
   );
-  z-index: 100;
+  z-index: 50;
 }
 
 header::before {
@@ -124,6 +124,64 @@ header::before {
 /* ------------------- */
 /* Container structure */
 /* ------------------- */
+
+.loader {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--bg-color);
+
+  z-index: 100;
+
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  transition: opacity, visibility;
+  transition-duration: 0.5s;
+}
+
+.loader > .dots {
+  gap: 0.7rem;
+
+  transition: opacity 0.5s;
+}
+
+.loader-dot {
+  opacity: 0;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+
+  animation: fade-in forwards, wave ease-in-out alternate infinite;
+  animation-duration: 0.7s;
+  animation-delay: calc(0.25s * var(--i));
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes wave {
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.loader.hidden {
+  transition-delay: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader.hidden > .dots {
+  opacity: 0;
+}
 
 .container {
   margin: 0 auto;
