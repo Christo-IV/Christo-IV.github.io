@@ -496,8 +496,6 @@ p {
 /* --------- */
 .education {
   grid-template-columns: 1fr min-content 1fr;
-
-  --timeline-angle: -40deg;
 }
 
 .modules {
@@ -507,36 +505,25 @@ p {
 }
 
 .timeline {
-  margin-top: 5rem;
-  height: 90vh;
-  transform: translateX(4400%) rotate(var(--timeline-angle));
+  height: 100vh;
 }
 
 .events {
   transform: translateX(55%) rotate(var(--timeline-angle));
   flex-direction: column;
-  gap: 7rem;
+  gap: 5rem;
   list-style: none;
 }
 
 .event {
-  position: relative;
-  transform: rotate(calc(var(--timeline-angle) * -1));
-}
-
-.event::before {
-  content: "";
-  width: 1.4rem;
-  height: 5px;
-  background-color: var(--primary-color);
-  position: absolute;
-  left: -6%;
-  top: 50%;
+  text-align: right;
 }
 
 .year {
   font-weight: bold;
   font-size: 2.5rem;
+  line-height: 50%;
+  display: inline-block;
 }
 
 .year.passed {
