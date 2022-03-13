@@ -436,7 +436,7 @@ p {
 }
 
 .about .contact::after {
-  content: url("imgs/green_scribble.svg");
+  content: url("../imgs/other/green_scribble.svg");
 }
 
 /* ---- */
@@ -578,5 +578,5 @@ p {
 }
 
 .internship .contact::after {
-  content: url("imgs/yellow_scribble.svg");
+  content: url("../imgs/other/yellow_scribble.svg");
 }
