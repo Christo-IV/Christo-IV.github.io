@@ -442,6 +442,14 @@ p {
 /* ---- */
 /* Work */
 /* ---- */
+.vertical-scroll-snap {
+  scroll-snap-type: y mandatory;
+}
+
+.vertical-scroll-snap > section {
+  scroll-snap-align: center;
+}
+
 .work {
   grid-template-columns: 3fr min-content 6fr;
 }
