@@ -28,7 +28,9 @@
           <ul class="nav-links flex">
             <li class="nav-link"><a href="about.html">About</a></li>
             <li class="nav-link"><a href="work.html">Work</a></li>
-            <li class="nav-link current"><a href="education.html">Education</a></li>
+            <li class="nav-link current">
+              <a href="education.html">Education</a>
+            </li>
             <li class="nav-link"><a href="internship.html">Internship</a></li>
           </ul>
         </div>
@@ -38,56 +40,7 @@
       <!-- Education  -->
 
       <section class="education grid" id="education">
-        <div class="left flex content-column">
-          <div class="header">
-            <h1>Completed modules</h1>
-          </div>
-          <div class="content flex">
-            <ul class="modules flex">
-              <li class="module">
-                <h3>Fundamentals of IT</h3>
-                <span class="sub"
-                  >OSs, general software usage, terminology, computer
-                  networks</span
-                >
-              </li>
-              <li class="module">
-                <h3>Fundamentals of Programming</h3>
-                <span class="sub"
-                  >Datatypes / structures, logic gates, IDEs, basics of OOP,
-                  code documentation, terminology</span
-                >
-              </li>
-              <li class="module">
-                <h3>Programming</h3>
-                <span class="sub">Python, OOP, MVC</span>
-              </li>
-              <li class="module">
-                <h3>Web application development</h3>
-                <span class="sub"
-                  >HTML, CSS, JS, TS, Node.js, React, Svelte</span
-                >
-              </li>
-              <li class="module">
-                <h3>Fundamentals of Distributed Applications</h3>
-                <span class="sub">APIs, API documentation, API Security</span>
-              </li>
-              <li class="module">
-                <h3>Software Development Methodologies</h3>
-                <span class="sub">Agile, Waterfall</span>
-              </li>
-              <li class="module">
-                <h3>English</h3>
-                <span class="sub">C2</span>
-              </li>
-            </ul>
-          </div>
-          <div class="footer"></div>
-        </div>
-        <div class="middle">
-          <div class="timeline divider v-dotted-line"></div>
-        </div>
-        <div class="right">
+        <div class="left">
           <ol class="events flex">
             <li class="event">
               <span class="year passed">2019</span>
@@ -96,14 +49,17 @@
             <li class="event">
               <span class="year passed">2020</span>
               <h3>Tartu University Course</h3>
+              <span class="sub">From Consumer to Developer</span>
             </li>
             <li class="event">
               <span class="year passed">2021</span>
               <h3>Garage46 Hackathon</h3>
+              <span class="sub">2nd place</span>
             </li>
             <li class="event">
-              <span class="year">2022</span>
+              <span class="year passed">2022</span>
               <h3>Maker of the Year Competition</h3>
+              <span class="sub">2nd place</span>
             </li>
             <li class="event">
               <span class="year">2023</span>
@@ -111,7 +67,123 @@
             </li>
           </ol>
         </div>
+        <div class="middle">
+          <div class="timeline divider v-dotted-line"></div>
+        </div>
+        <div class="right flex content-column">
+          <div class="header">
+            <h1>Completed modules</h1>
+          </div>
+          <div class="content flex">
+            <ul class="modules flex">
+              <li class="module v-dotted-line">
+                <span class="clickable" id="clickToExpand">
+                  <h3>Fundamentals of IT</h3>
+                  <span class="sub"
+                    >OSs, general software usage, terminology, computer networks
+                    <span class="arrow"></span
+                  ></span>
+                </span>
+                <div class="desc">
+                  <p>Learnt the basics of the IT field.</p>
+                </div>
+              </li>
+              <li class="module v-dotted-line">
+                <span class="clickable" id="clickToExpand">
+                  <h3>Fundamentals of Programming</h3>
+                  <span class="sub"
+                    >Datatypes / structures, logic gates, terminology
+                    <span class="arrow"></span
+                  ></span>
+                </span>
+                <div class="desc">
+                  <p>
+                    Essentially taught the underlying fundamentals of how
+                    computer code works.
+                  </p>
+                </div>
+              </li>
+              <li class="module v-dotted-line">
+                <span class="clickable" id="clickToExpand">
+                  <h3>Programming</h3>
+                  <span class="sub"
+                    >Python, OOP, MVC <span class="arrow"></span
+                  ></span>
+                </span>
+                <div class="desc">
+                  <p>
+                    First experience with actual code writing. Was taught the
+                    OOP programming model as well as the MVC framework for
+                    development.
+                  </p>
+                </div>
+              </li>
+              <li class="module v-dotted-line">
+                <span class="clickable" id="clickToExpand">
+                  <h3>Web application development</h3>
+                  <span class="sub"
+                    >HTML, CSS, JS, TS, Node.js, React, Svelte
+                    <span class="arrow"></span
+                  ></span>
+                </span>
+                <div class="desc">
+                  <p>
+                    Learnt how to create the front-end and back-end for web
+                    applications. Be it from scratch or using a library like
+                    React.
+                  </p>
+                </div>
+              </li>
+              <li class="module v-dotted-line">
+                <span class="clickable" id="clickToExpand">
+                  <h3>Fundamentals of Distributed Applications</h3>
+                  <span class="sub"
+                    >APIs, API documentation, API Security
+                    <span class="arrow"></span
+                  ></span>
+                </span>
+                <div class="desc">
+                  <p>
+                    Learnt how to create a REST API, which had user
+                    authentication and how to document APIs using Swagger.
+                  </p>
+                </div>
+              </li>
+              <li class="module v-dotted-line">
+                <span class="clickable" id="clickToExpand">
+                  <h3>Software Development Methodologies</h3>
+                  <span class="sub"
+                    >Agile, Waterfall <span class="arrow"></span
+                  ></span>
+                </span>
+                <div class="desc">
+                  <p>
+                    Learnt the different methodologies that have been used
+                    throughout the IT field. Special emphasis being given to the
+                    workings of agile methodologies.
+                  </p>
+                </div>
+              </li>
+              <li class="module v-dotted-line">
+                <span class="clickable" id="clickToExpand">
+                  <h3>English</h3>
+                  <span class="sub">C2 <span class="arrow"></span></span>
+                </span>
+                <div class="desc">
+                  <p>
+                    No problems communicating in English however, I do have a
+                    noticeable accent when speaking, as well as the occasional
+                    grammar mistake here and there.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="footer"></div>
+        </div>
       </section>
+    </div>
     <script src="JS/main.js"></script>
+    <script src="JS/clicking.js"></script>
   </body>
 </html>

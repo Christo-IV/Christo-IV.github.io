@@ -43,6 +43,10 @@ body {
   background: #555;
 }
 
+::selection {
+  background-color: var(--secondary-color);
+}
+
 /* ------ */
 /* Navbar */
 /* ------ */
@@ -249,8 +253,8 @@ header::before {
   gap: 1.5rem;
 }
 
-.content p {
-  margin-bottom: 0.7rem;
+.content p:not(:first-child) {
+  margin-top: 0.7rem;
 }
 
 /* Other general classes */
@@ -496,51 +500,74 @@ p {
 /* --------- */
 .education {
   grid-template-columns: 1fr min-content 1fr;
-
-  --timeline-angle: -40deg;
-}
-
-.modules {
-  flex-direction: column;
-  gap: 0.5rem;
-  list-style: none;
-}
-
-.timeline {
-  margin-top: 5rem;
-  height: 90vh;
-  transform: translateX(4400%) rotate(var(--timeline-angle));
-}
-
-.events {
-  transform: translateX(55%) rotate(var(--timeline-angle));
-  flex-direction: column;
-  gap: 7rem;
-  list-style: none;
-}
-
-.event {
-  position: relative;
-  transform: rotate(calc(var(--timeline-angle) * -1));
-}
-
-.event::before {
-  content: "";
-  width: 1.4rem;
-  height: 5px;
-  background-color: var(--primary-color);
-  position: absolute;
-  left: -6%;
-  top: 50%;
 }
 
 .year {
   font-weight: bold;
   font-size: 2.5rem;
+  line-height: 50%;
+  display: inline-block;
 }
 
 .year.passed {
   text-shadow: 5px 0 0 var(--secondary-color);
+}
+
+.events {
+  transform: translateX(55%) rotate(var(--timeline-angle));
+  flex-direction: column;
+  gap: 5rem;
+  list-style: none;
+}
+
+.event {
+  text-align: right;
+}
+
+.timeline {
+  height: 100vh;
+}
+
+.modules {
+  flex-direction: column;
+  gap: 1.3rem;
+  list-style: none;
+}
+
+.module {
+  padding-left: 0.5rem;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.arrow {
+  display: inline-block;
+  margin: 0 0.2rem;
+  border: 0 solid var(--primary-color);
+  border-width: 0 2px 2px 0;
+  width: 0.5rem;
+  height: 0.5rem;
+
+  position: relative;
+  transform: translateY(-25%) rotate(45deg);
+  transition: transform 0.15s ease-out;
+}
+
+.module > .desc {
+  display: none;
+  padding: 0.5rem 0;
+  overflow: hidden;
+  height: 0%;
+}
+
+.expanded > .desc {
+  display: inline-block;
+}
+
+.expanded .arrow {
+  transform: rotate(-135deg);
 }
 
 /* ---------- */
