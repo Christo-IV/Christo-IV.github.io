@@ -6,10 +6,6 @@
   font-size: 18px;
 }
 
-/* html {
-  scroll-behavior: smooth;
-} */
-
 *,
 *::before,
 *::after {
@@ -18,11 +14,18 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  /* scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh); */
+  scroll-snap-type: y mandatory;
+}
+
 body {
   background-color: var(--bg-color);
   color: var(--primary-color);
   font-family: "Open Sans";
-  overflow-x: hidden;
+  overflow: hidden scroll;
 }
 
 ::-webkit-scrollbar {
@@ -442,15 +445,9 @@ p {
 /* ---- */
 /* Work */
 /* ---- */
-.vertical-scroll-snap {
-  scroll-snap-type: y mandatory;
-}
-
-.vertical-scroll-snap > section {
-  scroll-snap-align: center;
-}
 
 .work {
+  scroll-snap-align: center;
   grid-template-columns: 3fr min-content 6fr;
 }
 
