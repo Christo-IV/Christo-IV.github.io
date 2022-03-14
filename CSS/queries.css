@@ -1,0 +1,15 @@
+@media only screen and (max-width: 1000px) {
+  h1 {
+    padding: 0 1rem;
+  }
+
+  .internship {
+    grid-template-columns: 1fr 6fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .internship {
+    grid-template-columns: 1fr;
+  }
+}

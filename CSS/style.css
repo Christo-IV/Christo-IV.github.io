@@ -510,7 +510,6 @@ p {
 }
 
 .events {
-  transform: translateX(55%) rotate(var(--timeline-angle));
   flex-direction: column;
   gap: 5rem;
   list-style: none;
@@ -522,6 +521,18 @@ p {
 
 .timeline {
   height: 100vh;
+  position: relative;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  height: 35%;
+  width: 100%;
+  bottom: 0;
+  border-left: 0.4rem solid var(--bg-color);
+  transform: translateX(-100%);
+  opacity: 0.8;
 }
 
 .modules {
