@@ -1,0 +1,62 @@
+/* ---------------------- */
+/* Education page queries */
+/* ---------------------- */
+
+@media only screen and (max-width: 1000px) {
+  body {
+    overflow: hidden;
+  }
+  .container > .education {
+    position: absolute;
+    left: 50%;
+    top: 12%;
+    transform: translateX(-50%);
+
+    width: min(40rem, 95vw);
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-areas:
+      "R"
+      "M"
+      "L";
+  }
+
+  section.education .footer {
+    display: none;
+  }
+
+  section.education > .middle > .divider {
+    height: 0;
+    width: 22rem;
+    margin: var(--divider-margin) 0;
+    width: 100%;
+  }
+
+  .dotted-line {
+    border-bottom-width: var(--border-width);
+  }
+
+  .timeline,
+  .events {
+    display: none;
+  }
+
+  /* section.education .events {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0;
+  }
+
+  section.education .event {
+    overflow: hidden;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    position: relative;
+    background-color: var(--secondary-color);
+  }
+
+  section.education .event > * {
+    visibility: hidden;
+  } */
+}

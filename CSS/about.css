@@ -1,0 +1,86 @@
+@import url("queries/about.css");
+
+/* ----- */
+/* About */
+/* ----- */
+.about {
+  grid-template-columns: 1fr min-content 1fr;
+}
+
+.about > .right {
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.about > .middle > .divider {
+  --divider-height: 40rem;
+  margin: 0 var(--divider-margin);
+}
+
+.dotted-line {
+  border-left-width: var(--border-width);
+}
+
+.programming-language {
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  gap: 1rem;
+}
+
+.programming-language > .language {
+  width: fit-content;
+}
+
+.programming-language > .proficiency {
+  display: inline-block;
+  width: min(20rem, 100%);
+  height: 0.4rem;
+  background-image: linear-gradient(
+    to right,
+    var(--secondary-color) var(--amount),
+    var(--primary-color) var(--amount)
+  );
+  border-radius: 1rem;
+}
+
+.c-sharp {
+  --amount: 50%;
+}
+
+.php {
+  --amount: 40%;
+}
+
+.python {
+  --amount: 60%;
+}
+
+.typescript {
+  --amount: 65%;
+}
+
+.javascript {
+  --amount: 70%;
+}
+
+.html-css {
+  --amount: 85%;
+}
+
+.contact {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.contact::after {
+  position: absolute;
+  top: 115%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about .contact::after {
+  content: url("../imgs/other/green_scribble.svg");
+}

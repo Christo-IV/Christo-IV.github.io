@@ -1,0 +1,73 @@
+/* ------ */
+/* Navbar */
+/* ------ */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-image: linear-gradient(
+    180deg,
+    rgba(63, 63, 68, 0.03) 0%,
+    rgba(196, 196, 196, 0) 100%
+  );
+  z-index: 50;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 300%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, var(--bg-color), transparent);
+  opacity: 1;
+  z-index: -1;
+}
+
+.navbar {
+  margin: 0 auto;
+  width: min(1200px, 90%);
+  height: 3rem;
+}
+
+.nav-content {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar a {
+  font-family: "Outfit";
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.nav-home > a {
+  font-weight: bold;
+}
+
+.nav-links {
+  justify-content: row;
+  gap: 1.2rem;
+  list-style: none;
+}
+
+.nav-link > a {
+  outline: none;
+  font-weight: normal;
+  transition: text-shadow 0.2s;
+  text-shadow: 0 0px var(--secondary-color), 0 0px var(--tertiary-color);
+}
+
+.nav-link > a:hover,
+.nav-link > a:focus {
+  text-shadow: 0 6px var(--secondary-color);
+}
+
+.current > a {
+  text-shadow: 0 6px var(--secondary-color), 0 12px var(--tertiary-color);
+}

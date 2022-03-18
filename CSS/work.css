@@ -1,0 +1,66 @@
+@import url("queries/work.css");
+
+/* ---- */
+/* Work */
+/* ---- */
+.work {
+  grid-template-columns: 3fr min-content 6fr;
+}
+
+.project-heading > .sub {
+  font-size: 1rem;
+  font-family: "Outfit";
+  font-weight: light;
+}
+
+.project-links {
+  gap: 0.5rem;
+}
+
+.project-link {
+  border: 0.2rem solid var(--primary-color);
+
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+  background-color: var(--bg-color);
+
+  align-items: center;
+  box-shadow: 0px 0px 0 var(--secondary-color), 0px 0px 0 var(--secondary-color);
+  outline: none;
+}
+
+.project-link:hover,
+.project-link:focus {
+  transform: translate(5px, -5px);
+  box-shadow: -2.5px 2.5px 0 var(--secondary-color),
+    -5px 5px 0 var(--secondary-color);
+}
+
+.project-link:hover::before {
+  transform: translate(-10%, 10%);
+}
+
+.project-link > img {
+  height: calc(32px + 0.2rem);
+  width: auto;
+  padding: 0.2rem 2rem;
+  z-index: 5;
+  background-color: var(--bg-color);
+}
+
+.work > .middle > .divider {
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 0 var(--divider-margin);
+}
+
+.dotted-line {
+  border-left-width: var(--border-width);
+}
+
+.work-snapshot {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}

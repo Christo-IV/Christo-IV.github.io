@@ -1,0 +1,41 @@
+/* ------------------ */
+/* About page queries */
+/* ------------------ */
+
+@media only screen and (max-width: 1100px) {
+  .container > .about {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, min-content);
+    grid-template-areas:
+      "L"
+      "M"
+      "R";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    padding: 0 1rem;
+    width: min(40rem, 95vw);
+  }
+
+  section.about > .middle > .divider {
+    height: 0;
+    width: 22rem;
+    --divider-margin: 4rem;
+    margin: var(--divider-margin) 0;
+    width: 100%;
+  }
+
+  .dotted-line {
+    border-bottom-width: var(--border-width);
+  }
+
+  section.about > .right {
+    margin: 0 auto;
+  }
+
+  section.about > .right .proficiency {
+    width: min(22rem, 60vw);
+  }
+}

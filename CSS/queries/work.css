@@ -1,0 +1,33 @@
+/* ----------------- */
+/* Work page queries */
+/* ----------------- */
+
+@media only screen and (max-width: 1100px) {
+  .container > .work {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 12%);
+
+    width: min(40rem, 95vw);
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-areas:
+      "L"
+      "M"
+      "R";
+  }
+
+  section.work > .middle > .divider {
+    height: 0;
+    margin: var(--divider-margin) 0;
+    width: 100%;
+  }
+
+  section.work .footer {
+    display: none;
+  }
+
+  .dotted-line {
+    border-bottom-width: var(--border-width);
+  }
+}

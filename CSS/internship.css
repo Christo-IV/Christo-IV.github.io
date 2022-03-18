@@ -1,0 +1,25 @@
+@import url("queries/internship.css");
+
+/* ---------- */
+/* Internship */
+/* ---------- */
+.internship {
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.contact {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.contact::after {
+  position: absolute;
+  top: 115%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.internship .contact::after {
+  content: url("../imgs/other/yellow_scribble.svg");
+}
