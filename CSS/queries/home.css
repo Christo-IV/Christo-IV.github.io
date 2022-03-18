@@ -1,0 +1,35 @@
+/* ----------------- */
+/* Home page queries */
+/* ----------------- */
+
+@media only screen and (max-width: 700px) {
+  .container > .landing {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, min-content);
+    grid-template-areas:
+      "L"
+      "M"
+      "R";
+
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-25%);
+    padding: 0 1rem;
+  }
+
+  section.landing .my-img {
+    margin: 0 auto;
+  }
+
+  section.landing > .middle > .divider {
+    height: 0;
+    width: 22rem;
+    margin: var(--divider-margin) 0;
+    width: 100%;
+  }
+
+  .dotted-line {
+    border-bottom-width: var(--border-width);
+  }
+}

@@ -1,0 +1,98 @@
+@import url("queries/education.css");
+
+/* --------- */
+/* Education */
+/* --------- */
+.education {
+  grid-template-columns: 1fr min-content 1fr;
+}
+
+.year {
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 50%;
+  display: inline-block;
+}
+
+.year.passed {
+  text-shadow: 5px 0 0 var(--secondary-color);
+}
+
+.events {
+  flex-direction: column;
+  gap: 5rem;
+  list-style: none;
+}
+
+.event {
+  text-align: right;
+}
+/* 
+.timeline {
+  height: 100vh;
+  position: relative;
+} */
+
+/* .timeline::after {
+  content: "";
+  position: absolute;
+  height: 35%;
+  width: 100%;
+  bottom: 0;
+  border-left: 0.4rem solid var(--bg-color);
+  transform: translateX(-100%);
+  opacity: 0.8;
+} */
+
+.education > .middle > .divider {
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 0 var(--divider-margin);
+}
+
+.dotted-line {
+  border-left-width: var(--border-width);
+}
+
+.modules {
+  flex-direction: column;
+  gap: 1.3rem;
+  list-style: none;
+}
+
+.module {
+  padding-left: 0.5rem;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.arrow {
+  display: inline-block;
+  margin: 0 0.2rem;
+  border: 0 solid var(--primary-color);
+  border-width: 0 2px 2px 0;
+  width: 0.5rem;
+  height: 0.5rem;
+
+  position: relative;
+  transform: translateY(-25%) rotate(45deg);
+  transition: transform 0.15s ease-out;
+}
+
+.module > .desc {
+  display: none;
+  padding: 0.5rem 0;
+  overflow: hidden;
+  height: 0%;
+}
+
+.expanded > .desc {
+  display: inline-block;
+}
+
+.expanded .arrow {
+  transform: rotate(-135deg);
+}
