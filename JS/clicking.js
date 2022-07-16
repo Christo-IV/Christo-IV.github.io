@@ -1,30 +1,28 @@
 const clickables = document.querySelectorAll("#clickToExpand");
 
+// TODO - Fix bug where clicking on a previously clicked element causes it to close.
+// Possible cause is the second event listener
+
 clickables.forEach((element) => {
   element.addEventListener("click", () => {
-    const module = element.parentElement;
-    resetExpanded(module);
-    module.classList.toggle("expanded");
+    handleClick(element);
+  });
+
+  element.addEventListener("focus", () => {
+    handleClick(element);
   });
 });
 
-const resetExpanded = (expandedElement) => {
-  // "expandedElement" is used to specify an element which is to be ignored in this function.
-  // Done so to allow for collapsing of already expanded elements.
+let previouslyClicked = null;
+const handleClick = (element) => {
+  const module = element.parentElement;
+  module.classList.toggle("expanded");
 
-  // Removes the "expanded" class from all elements.
-  // This is to make only one description be expanded at once.
-  const expandedElements = document.querySelectorAll(".expanded");
+  if (previouslyClicked === module) return;
 
-  if (expandedElements.length < 1) {
-    return;
+  if (previouslyClicked !== null) {
+    previouslyClicked.classList.remove("expanded");
   }
 
-  if (expandedElements[0] == expandedElement) {
-    return;
-  }
-
-  expandedElements.forEach((element) => {
-    element.classList.remove("expanded");
-  });
+  previouslyClicked = module;
 };

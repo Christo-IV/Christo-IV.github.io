@@ -6,6 +6,7 @@
   --primary-color: #3f3f44;
   --secondary-color: #fdcb9e;
   --tertiary-color: #cceabb;
+  --border-width: 0.4rem;
   font-size: 18px;
 }
 
@@ -67,8 +68,6 @@ STYLES.
   border-width: 0;
   border-style: dotted;
   border-color: var(--primary-color);
-
-  --border-width: 0.4rem;
 }
 
 h1,
@@ -141,6 +140,7 @@ p {
   min-height: 30%;
 }
 
+/* Note to self: These refer to the section headers like "My work", "About me", etc */
 .header {
   position: relative;
 }
