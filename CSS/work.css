@@ -62,5 +62,5 @@
 .work-snapshot {
   width: 100%;
   object-fit: cover;
-  border-radius: 1rem;
+  border-radius: 0.3rem;
 }
