@@ -45,15 +45,15 @@
 }
 
 .c-sharp {
-  --amount: 50%;
+  --amount: 15%;
 }
 
 .php {
-  --amount: 40%;
+  --amount: 30%;
 }
 
 .python {
-  --amount: 60%;
+  --amount: 50%;
 }
 
 .typescript {
@@ -61,7 +61,7 @@
 }
 
 .javascript {
-  --amount: 70%;
+  --amount: 75%;
 }
 
 .html-css {
